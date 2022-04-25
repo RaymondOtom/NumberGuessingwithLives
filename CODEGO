@@ -1,0 +1,17 @@
+import random
+
+num = random.randint(1, 10)
+lives = 3
+
+while lives > 0:
+    guess = int(input("Input the number u guess:"))
+    if guess == num:
+        print("Your guess is correct")
+        break
+    else:
+          lives = lives -1
+else:
+    print("You got the wrong number\n"
+          "YOU LOSE")
+
+
